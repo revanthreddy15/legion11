@@ -4,4 +4,4 @@
 # If you change this key, all old signed cookies will become invalid!
 # Make sure the secret is at least 30 characters and all random,
 # no regular words or you'll be exposed to dictionary attacks.
-Legion::Application.config.secret_token = '1650fec1260e25e0531d79adf1772c62b0e1a3d2c6512636627e1e62a18940fd5be23e642743fe8fd6ae9d4bbfc9308bd1bfc220230d276d7832aad975d9eae7'
+Factcheck::Application.config.secret_token = 'd87b81d7efebbba352f0a6617cc7f9cb5f063ffbd65f928ab03d00d8dd426c7a0c5f95a5f27e7e60b1c38077579d79ab8359264beafa5caeabe81e62abd8993f'

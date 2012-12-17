@@ -4,4 +4,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-Legion::Application.load_tasks
+Factcheck::Application.load_tasks

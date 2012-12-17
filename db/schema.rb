@@ -11,11 +11,30 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121203002622) do
+ActiveRecord::Schema.define(:version => 20121018044817) do
+
+  create_table "comments", :force => true do |t|
+    t.text     "body"
+    t.integer  "user_id"
+    t.integer  "video_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+    t.integer  "time"
+  end
 
   create_table "users", :force => true do |t|
-    t.string   "name"
     t.string   "email"
+    t.string   "password_hash"
+    t.string   "password_salt"
+    t.datetime "created_at",    :null => false
+    t.datetime "updated_at",    :null => false
+    t.string   "username"
+  end
+
+  create_table "videos", :force => true do |t|
+    t.string   "title"
+    t.string   "url"
+    t.integer  "user_id"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
